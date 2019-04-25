@@ -16,5 +16,13 @@ namespace FizzBuzz.UnitTests
         [Fact]
         public void NumberDevisableBy3AndNotDevsiableBy5ShouldReturnFizz() =>
             new FizzBuzz().GetStringForNumber(3).Should().Be("Fizz");
+
+        [Fact]
+        public void NumberDevisableBy5AndNotDevsiableBy3ShouldReturnBuzz() =>
+           new FizzBuzz().GetStringForNumber(5).Should().Be("Buzz");
+
+        [Fact]
+        public void NumberDevisableBy3AndDevsiableBy5ShouldReturnFizzBuzz() =>
+           new FizzBuzz().GetStringForNumber(15).Should().Be("FizzBuzz");
     }
 }

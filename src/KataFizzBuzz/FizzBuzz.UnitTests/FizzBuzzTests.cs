@@ -34,5 +34,9 @@ namespace FizzBuzz.UnitTests
         [Fact]
         public void NumberRangeShouldListOfEqualSize() =>
           new FizzBuzz().GetListForNumberRange(5).Count().Should().Be(5);
+
+        [Fact]
+        public void NumberRange3ShouldEndWithFizz() =>
+          new FizzBuzz().GetListForNumberRange(3).Last().Should().Be("Fizz");
     }
 }

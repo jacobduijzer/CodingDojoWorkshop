@@ -29,7 +29,10 @@ namespace FizzBuzz
 
         public IEnumerable<string> GetListForNumberRange(int amountOfItems)
         {
-            return new string[] { };
+            for (int i = 1; i <= amountOfItems; i++)
+            {
+                yield return GetStringForNumber(i);
+            }
         }
     }
 }

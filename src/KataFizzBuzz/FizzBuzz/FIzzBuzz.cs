@@ -8,8 +8,13 @@ namespace FizzBuzz
         {
             var devisableBy3 = number % 3 == 0;
             var devisableBy5 = number % 5 == 0;
+            var devisableBy7 = number % 7 == 0;
 
-            if (devisableBy3 && devisableBy5)
+            if (devisableBy7)
+            {
+                return "FizzBuzzBang";
+            }
+            else if (devisableBy3 && devisableBy5)
             {
                 return "FizzBuzz";
             }

@@ -28,6 +28,10 @@ namespace FizzBuzz.UnitTests
            new FizzBuzz().GetStringForNumber(15).Should().Be("FizzBuzz");
 
         [Fact]
+        public void NumberDevisableBy7ShouldReturnFizzBuzzBang() =>
+            new FizzBuzz().GetStringForNumber(7).Should().Be("FizzBuzzBang");
+
+        [Fact]
         public void NumberRangeShouldListOfStrings() =>
           new FizzBuzz().GetListForNumberRange(1).Should().BeAssignableTo<IEnumerable<string>>();
 

@@ -218,20 +218,17 @@ whether its input integer is a leap year or not.
 
 # Randori in pairs: FizzBuzz
 
-<sub>
-  Stel je voor: je bent 11 jaar oud en vijf minuten voor het einde van de les besluit de wiskundeleraar een spelletje te doen: Hij gaat alle leerlingen aanwijzen en ze het opvolgende nummer laten zeggen, te beginnen bij 1. Echter, de grap zit hem er in dat je bij elk nummer dat deelbaar is door 3 "Fizz" moet zeggen. Is het deelbaar door 5? Dan is het "Buzz". De leraar begint met aanwijzen: "een", "twee!", "Fizz", "vier", "Buzz!"...
+Stel je voor: je bent 11 jaar oud en vijf minuten voor het einde van de les besluit de wiskundeleraar een spelletje te doen: Hij gaat alle leerlingen aanwijzen en ze het opvolgende nummer laten zeggen, te beginnen bij 1. Echter, de grap zit hem er in dat je bij elk nummer dat deelbaar is door 3 "Fizz" moet zeggen. Is het deelbaar door 5? Dan is het "Buzz". De leraar begint met aanwijzen: "een", "twee!", "Fizz", "vier", "Buzz!"...
   
-  Totdat jij aan de beurt bent. Je kijkt glazig, de tijd lijkt stil te staan, je krijgt een droge mond, je begint te zweten en net op tijd krijg weet je het: "Fizz!".
-</sub>
+Totdat jij aan de beurt bent. Je kijkt glazig, de tijd lijkt stil te staan, je krijgt een droge mond, je begint te zweten en net op tijd krijg weet je het: "Fizz!".
+
 
 
 ---
 
 # Randori in pairs: FizzBuzz (2)
 
-<sub>
-  Je besluit dat je dit niet meer mag overkomen en je gaat naar huis om een computerprogramma te schrijven dit dit probleem voor je oplost.
-</sub>
+Je besluit dat je dit niet meer mag overkomen en je gaat naar huis om een computerprogramma te schrijven dit dit probleem voor je oplost.
 
 ---
 
@@ -242,10 +239,12 @@ De opdracht:
 Schrijf een programma met als uitvoer de nummers 1 tot 100. Getallen deelbaar door drie worden vervangen door "Fizz" en getallen deelbaar door vijf met "Buzz". Getallen deelbaar door 3 en 5 worden vervangen met FizzBuzz.
 
 Voorbeeld output:
+
 ```
 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 
 13, 14, FizzBuzz, 16, 17, Fizz, 19, Buzz, etc
 ```
+
 ---
 
 # Starten
@@ -254,10 +253,6 @@ Voorbeeld output:
 * Startproject staat op Github 
 	(https://github.com/jacobduijzer/CodingDojoWorkshop)
 * BONUS: Maak een fork en doe aan het einde een PR zodat we verschillende oplossingen kunnen zien
-
----
-
-This page is intentionally left blank
 
 ---
 

@@ -38,5 +38,13 @@ namespace FizzBuzz.UnitTests
         [Fact]
         public void NumberRange3ShouldEndWithFizz() =>
           new FizzBuzz().GetListForNumberRange(3).Last().Should().Be("Fizz");
+
+        [Fact]
+        public void NumberRange100ShouldContainFizBuzz6Times()
+        {
+            var values = new FizzBuzz().GetListForNumberRange(100);
+            var grouped = values.GroupBy(x => x, x => x).ToDictionary(x => x.Key, x => x.Count());
+            grouped["FizzBuzz"].Should().Be(6);
+        }
     }
 }

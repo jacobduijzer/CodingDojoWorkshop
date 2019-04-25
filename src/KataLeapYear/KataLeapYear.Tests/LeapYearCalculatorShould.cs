@@ -10,6 +10,24 @@ namespace KataLeapYear.Tests
         public void NotThrowException()
             => new Action(() => new LeapYearCalculator().IsLeapYear(0)).Should().NotThrow<Exception>();
 
+        [Fact]
+        public void ReturnTrueWhenDivisableBy4()
+        {
+            new LeapYearCalculator().IsLeapYear(12).Should().BeTrue();
+        }
+
+        [Fact]
+        public void ReturnFalseWhenDevisableBy100()
+        {
+            new LeapYearCalculator().IsLeapYear(1100).Should().BeFalse();
+        }
+
+        [Fact]
+        public void ReturnTrueWhenDivisableBy100AndBy400()
+        {
+            new LeapYearCalculator().IsLeapYear(400).Should().BeTrue();
+        }
+
         [Theory]
         [InlineData(2000, true)]
         [InlineData(1700, false)]
@@ -24,6 +42,6 @@ namespace KataLeapYear.Tests
         [InlineData(2019, false)]
         public void CalculateIfGivenYearIsALeapYear(int year, bool expectedResult) =>
             new LeapYearCalculator().IsLeapYear(year)
-                .Should().Be(expectedResult);
+                .Should().Be(DateTime.IsLeapYear(year));
     }
 }

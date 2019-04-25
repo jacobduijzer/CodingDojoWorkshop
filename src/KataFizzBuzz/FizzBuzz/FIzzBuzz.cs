@@ -1,9 +1,7 @@
-﻿using System;
-
-namespace FizzBuzz
+﻿namespace FizzBuzz
 {
     public class FizzBuzz
     {
-        public string GetStringForNumber() => throw new NotImplementedException();
+        public string GetStringForNumber(int number) => number.ToString();
     }
 }

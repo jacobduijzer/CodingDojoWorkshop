@@ -15,11 +15,19 @@ namespace FizzBuzz
             {
                 result += "Buzz";
             }
+            if (number % 7 == 0)
+            {
+                result = "FizzBuzzBang";
+            }
             return result ?? number.ToString();
         }
 
         public string GetStringForNumber1(int number)
         {
+            if (number % 7 == 0)
+            {
+                return "FizzBuzzBang";
+            }
             if (number % 3 == 0 && number % 5 == 0)
             {
                 return "FizzBuzz";

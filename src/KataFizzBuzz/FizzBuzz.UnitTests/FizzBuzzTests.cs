@@ -17,6 +17,9 @@ namespace FizzBuzz.UnitTests
         [InlineData(6, "Fizz")]
         [InlineData(10, "Buzz")]
         [InlineData(30, "FizzBuzz")]
+        [InlineData(7, "FizzBuzzBang")]
+        [InlineData(21, "FizzBuzzBang")]
+        [InlineData(105, "FizzBuzzBang")]
         public void ReturnNumber(int input, string expected)
         {
             new FizzBuzz().GetStringForNumber(input).Should().Be(expected);

@@ -1,4 +1,6 @@
 using FluentAssertions;
+using System.Collections.Generic;
+using System.Linq;
 using Xunit;
 
 namespace FizzBuzz.UnitTests
@@ -24,5 +26,13 @@ namespace FizzBuzz.UnitTests
         [Fact]
         public void NumberDevisableBy3AndDevsiableBy5ShouldReturnFizzBuzz() =>
            new FizzBuzz().GetStringForNumber(15).Should().Be("FizzBuzz");
+
+        [Fact]
+        public void NumberRangeShouldListOfStrings() =>
+          new FizzBuzz().GetListForNumberRange(1).Should().BeAssignableTo<IEnumerable<string>>();
+
+        [Fact]
+        public void NumberRangeShouldListOfEqualSize() =>
+          new FizzBuzz().GetListForNumberRange(5).Count().Should().Be(5);
     }
 }
